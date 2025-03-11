@@ -1,57 +1,61 @@
-body{
+body {
     border: 3px solid black;
-    width: 500px;
-    margin: 0 auto;    /* Centers the body horizontally */
-    padding: 20px;     /* Optional: Adds space inside the border */
-    
+    max-width: 90%; /* Adjusted for responsiveness */
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; /* Centers text and elements */
 }
 
 img {
-    width: 380px;
+    max-width: 100%; /* Makes image responsive */
+    height: auto;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    
-    
+    margin: 0 auto;
 }
-h1{
-   text-align: center;
-}
-.Email{
-    display: block;
-    margin-bottom: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 15px;
-    padding-left: 15px;
-     text-align: center; 
-    border: 3px solid #121212;
-    color: gray;
-    font-weight: bold;
-}
-.btnJoin{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 80px;
-    padding-left: 80px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: 3px solid #121212;
-    color: white;
-    background-color: #121212;
-    font-weight: bold;
-}
-.info{
-    
-    width: 380px;
-    margin-left: auto;
-    margin-right: auto;
-    font-style: italic;
-    
-}
-.terms{
+
+h1 {
     text-align: center;
+}
+
+.Email, .btnJoin {
+    display: block;
+    width: 100%; /* Full width for better mobile layout */
+    max-width: 350px; /* Prevents being too wide on large screens */
+    margin: 10px auto;
+    padding: 12px;
+    text-align: center;
+    border: 2px solid #121212;
+    font-weight: bold;
+}
+
+.Email {
+    color: gray;
+}
+
+.btnJoin {
+    background-color: #121212;
+    color: white;
+    cursor: pointer;
+}
+
+.info {
+    max-width: 90%;
+    margin: 10px auto;
+    font-style: italic;
+}
+
+.terms {
+    text-align: center;
+}
+
+/* Mobile Styles */
+@media (max-width: 400px) {
+    body {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .Email, .btnJoin {
+        width: 100%; /* Makes inputs/buttons fit smaller screens */
+    }
 }
